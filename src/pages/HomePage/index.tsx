@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BgResumeTodo from '../../assets/bg-resume-todo.svg';
+import ToDoSection from './ToDoSection';
 import TopSection from './TopSection';
 
 export default function HomePage() {
@@ -7,23 +8,25 @@ export default function HomePage() {
     <>
       <TopSection />
 
-      <TodoResumeSection dir={BgResumeTodo}>
+      <ToDoResumeSection dir={BgResumeTodo}>
         <h1>To-do List</h1>
 
         <p>Drag and drop to set your main priorities, check when done and create what's new.</p>
-      </TodoResumeSection>
+      </ToDoResumeSection>
+
+      <ToDoSection />
     </>
   );
 }
 
 // & CSS STYLED-COMPONENTS...
 
-const TodoResumeSection = styled.section`
+const ToDoResumeSection = styled.section`
   background-image: url(${(props) => props.dir});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 10px;
+  padding: 100px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;

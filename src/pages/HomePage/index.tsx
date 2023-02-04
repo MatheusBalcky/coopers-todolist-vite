@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import BgResumeTodo from '../../assets/bg-resume-todo.svg';
-import ToDoSection from './ToDoSection';
-import TopSection from './TopSection';
+import ToDoSection from './ToDoSection/ToDoSection';
+import TopSection from './TopSection/TopSection';
 
 export default function HomePage() {
   return (

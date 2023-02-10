@@ -97,10 +97,6 @@ select {
   font-weight: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
